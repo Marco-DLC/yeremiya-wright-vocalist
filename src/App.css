@@ -1,7 +1,30 @@
+@font-face {
+  font-family: 'Praktika';
+  src: url(./assets/fonts/Praktika-Light.otf);
+}
+@font-face {
+  font-family: 'Praktika-Italic';
+  src: url(./assets/fonts/Praktika-LightItalic.otf);
+}
+@font-face {
+  font-family: 'Kavaler';
+  src: url(./assets/fonts/Kavaler_demo.otf);
+}
+
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Praktika', Arial, Helvetica, sans-serif;
+}
+
+h1, h2,
+h3, h4 {
+  font-family:'Kavaler','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+  font-size: 1.8em;
 }
 
 .Header {
@@ -12,14 +35,16 @@
   position:sticky;
   top:-4px;
   z-index: 1;
-  padding-top: 8px;
-  padding-bottom: 12px;
+  padding-top: 12px;
   background-color: white;
   box-sizing: border-box;
 }
 
 .Header h1 {
   margin:0;
+  font-size: 4em;
+  letter-spacing: -.05em;
+  word-spacing: -.1em;
 }
 
 .Header button {
@@ -28,7 +53,7 @@
   padding:0 5px;
   color: #213547;
   right:45px;
-  top:8px;
+  top:7px;
   font-size: 2.8em;
   border: 2px solid white;
 }
@@ -88,7 +113,7 @@
   padding: 0 250px;
   text-indent: 1em;
   font-weight: lighter;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Praktika-Italic', Georgia, "Times New Roman", Times, serif;
 }
 
 .Showcase {
@@ -108,7 +133,8 @@
   text-align: center;
   color: white;
   margin-bottom:0;
-  background-color: rgba(0, 0, 0, 0.39);
+  background-color: rgba(0, 0, 0, 0.212);
+  text-shadow: .01em 0em .17em black;
   padding:0 10px;
 }
 

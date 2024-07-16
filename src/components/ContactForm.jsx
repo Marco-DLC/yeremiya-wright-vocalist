@@ -51,7 +51,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="Contact-Form">
+    <div id="ContactForm">
       {isSending || isSubmitted ? (
         messageStatus() 
       ) : (
@@ -64,6 +64,7 @@ export default function ContactForm() {
 function Form({ afterSubmit }) {
   return (
     <>
+    <span id="contactScrl"></span>
       <h2>Contact Me:</h2>
       <div className="form-container">
         <form onSubmit={afterSubmit} method="POST">

@@ -1,6 +1,6 @@
 export default function Slideshow() {
   return (
-    <div className="Slideshow">
+    <div id="Slideshow">
       <div className="slides-container">
         <Slide src='../public/Spring-Sing.webp' />
         <Slide src='../public/Yerry-Wright.webp' />

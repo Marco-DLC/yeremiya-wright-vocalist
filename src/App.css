@@ -11,7 +11,11 @@
   src: url(./assets/fonts/Kavaler_demo.otf);
 }
 
-.App {
+html {
+  scroll-behavior: smooth;
+}
+
+#App {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +31,15 @@ h2 {
   font-size: 1.8em;
 }
 
-.Header {
+#bioScrl,
+#showcaseScrl,
+#resumeScrl,
+#contactScrl {
+  position: absolute;
+  top:-82px;
+}
+
+#Header {
   display:flex;
   width:100%;
   text-align: center;
@@ -40,14 +52,14 @@ h2 {
   box-sizing: border-box;
 }
 
-.Header h1 {
+#Header h1 {
   margin:0;
   font-size: 4em;
   letter-spacing: -.05em;
   word-spacing: -.1em;
 }
 
-.Header button {
+#Header button {
   position: absolute;
   margin:0;
   padding:0 5px;
@@ -58,17 +70,72 @@ h2 {
   border: 2px solid white;
 }
 
-.Header button:hover {
+#Header button:hover {
   border:2px #213547 solid;
 }
 
-.Header button:focus {
+#Header button:focus {
+  outline: none;
+}
+
+#Header button.open {
   background-color: #213547;
   color:white;
   border: #213547 2px solid;
 }
 
-.Slideshow {
+#Sidebar,
+#SidebarClone {
+  display: none;
+  flex-direction: column;
+  gap:.7em;
+  position:absolute;
+  right:0;
+  top:2.55em;
+  background-color: #213547;
+  font-size: 2em;
+  padding:1.5em .5em;
+  box-sizing: border-box;
+}
+
+#Sidebar.open {
+  display: flex;
+  animation: sidebar-toggle .25s forwards;
+}
+
+#SidebarClone {
+  display: none;
+}
+
+#SidebarClone.closing {
+  display: flex;
+  animation: sidebar-toggle .25s reverse;
+}
+
+@keyframes sidebar-toggle {
+  from {
+    opacity: 0%;
+    gap:0;
+  } to {
+    opacity: 100%;
+    gap:.7em;
+  }
+}
+
+hr {
+  width:100%;
+  height:1px;
+  border:none;
+  background-image: linear-gradient(90deg, transparent,white, transparent);
+}
+
+#Sidebar a,
+#SidebarClone a {
+  text-decoration: none;
+  color:white;
+}
+
+#Slideshow {
   width: 100%;
   height: 625px;
   overflow: hidden;
@@ -108,7 +175,7 @@ h2 {
   width:100%;
 }
 
-.Biography {
+#Biography {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -119,9 +186,10 @@ h2 {
   padding: 55px 0;
   background: url(../public/blue-bg.jpg);
   background-size: cover;
+  position: relative;
 }
 
-.Biography h2 {
+#Biography h2 {
   margin: 0;
 }
 
@@ -132,7 +200,7 @@ h2 {
   font-family: 'Praktika-Italic', Georgia, "Times New Roman", Times, serif;
 }
 
-.Showcase {
+#Showcase {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0 100px 50px;
@@ -141,9 +209,10 @@ h2 {
   width: 100%;
   row-gap: 55px;
   box-sizing: border-box;
+  position: relative;
 }
 
-.Showcase h2 {
+#Showcase h2 {
   grid-column: 1 / 3;
   justify-self: center;
   text-align: center;
@@ -241,7 +310,7 @@ iframe {
   grid-column: 1 / 2;
 }
 
-.resumes-contact-section {
+#resumesContactSection {
   width: 100%;
   box-sizing: border-box;
   display: grid;
@@ -250,23 +319,24 @@ iframe {
   padding: 55px 100px;
 }
 
-.Resumes {
+#Resumes {
   background-color: #213547;
   display: flex;
   color:white;
   flex-direction: column;
   align-items: start;
-  padding: 6px 12px 12px 12px;
+  padding: 20px 12px 12px 12px;
   gap:12px;
   box-sizing: border-box;
+  position: relative;
 }
 
-.Resumes h2 {
+#Resumes h2 {
   align-self: center;
   margin:0;
 }
 
-.Contact-Form {
+#ContactForm {
   background-color: black;
   color:white;
   display: flex;
@@ -274,18 +344,19 @@ iframe {
   align-items: center;
   justify-content: center;
   padding: 6px 12px 12px 12px;
+  position: relative;
 }
 
-.Contact-Form button {
+#Contact-Form button {
   grid-column: 1 / 3;
   justify-self: center;
 }
 
-.Contact-Form h2 {
+#Contact-Form h2 {
   margin:0;
 }
 
-.Contact-Form img {
+#Contact-Form img {
   width:1em;
 }
 
@@ -318,7 +389,7 @@ textarea {
   height:5em;
 }
 
-.Footer {
+#Footer {
   background-color: black;
   color:white;
   width:100%;
@@ -330,7 +401,7 @@ textarea {
 }
 
 @media (max-width: 700px) {
-  .Slideshow {
+  #Slideshow {
     height:225px;
   }
 
@@ -338,14 +409,14 @@ textarea {
     padding: 0 55px;
   }
 
-  .Showcase {
+  #Showcase {
     padding: 0 15px 55px;
     background-position: -700px -55px;
   }
 }
 
 @media (min-width: 1400px) {
-  .Showcase {
+  #Showcase {
     background-position: 0;
   }
 }

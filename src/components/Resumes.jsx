@@ -1,6 +1,7 @@
 export default function Resumes() {
   return (
-    <div className="Resumes">
+    <div id="Resumes">
+      <span id="resumeScrl"></span>
       <h2>Resumes</h2>
       <Resume resType={"Performance"} />
       <Resume resType={"Corporate"} />

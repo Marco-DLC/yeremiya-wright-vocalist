@@ -1,6 +1,7 @@
 export default function Biography() {
   return (
-    <div className="Biography">
+    <div id="Biography">
+      <span id="bioScrl"></span>
       <h2>About Yerry...</h2>
       <div className="bio-p">
         <p>

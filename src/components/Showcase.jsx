@@ -1,6 +1,7 @@
 export default function Showcase() {
   return (
-    <div className="Showcase">
+    <div id="Showcase">
+      <span id="showcaseScrl"></span>
       <h2>Performances</h2>
       <PerformanceCard id='card1' info='&apos;Pulse of the Day&apos; - Alina Engibaryan'>
       <iframe src="https://drive.google.com/file/d/1ZQFv9LXWPrSz8aS9pIox-pUq8d2Qsv7v/preview" allow="autoplay"></iframe>

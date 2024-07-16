@@ -9,12 +9,12 @@ import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
-    <div className="App">
+    <div id="App">
       <Header />
       <Slideshow />
       <Biography />
       <Showcase />
-      <div className="resumes-contact-section">
+      <div id="resumesContactSection">
         <Resumes />
         <ContactForm />
       </div>

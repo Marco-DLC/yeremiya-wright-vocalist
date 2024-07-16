@@ -1,7 +1,7 @@
 export default function Resumes() {
   return (
     <div className="Resumes">
-      <h3>Resumes</h3>
+      <h2>Resumes</h2>
       <Resume resType={"Performance"} />
       <Resume resType={"Corporate"} />
       <Resume resType={"Teaching"} />

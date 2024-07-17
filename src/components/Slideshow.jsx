@@ -11,9 +11,13 @@ export default function Slideshow() {
 }
 
 function Slide({src}){
+
+  const handleContextMenu = (e) => {
+    e.preventDefault();
+  }
     return (
     <div className="slide">
-        <img src={src} />
+        <img src={src} draggable='false' onContextMenu={handleContextMenu} />
     </div>
     )
 }

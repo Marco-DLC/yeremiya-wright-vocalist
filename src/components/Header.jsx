@@ -27,7 +27,7 @@ export default function Header() {
 
   return (
     <div id="Header">
-      <h1>Yeremiya Wright</h1>
+      <h1><a href="#">Yeremiya Wright</a></h1>
       <button ref={menuBtnRef} onClick={handleClick} className={sidebarOpen.opened ? "open" : ""}>
         ☰
       </button>

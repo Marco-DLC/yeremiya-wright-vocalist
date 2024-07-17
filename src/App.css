@@ -59,6 +59,10 @@ h2 {
   word-spacing: -.1em;
 }
 
+#Header a{
+  color:#213547;
+}
+
 #Header button {
   position: absolute;
   margin:0;
@@ -133,6 +137,16 @@ hr {
 #SidebarClone a {
   text-decoration: none;
   color:white;
+}
+
+#Sidebar a:hover,
+#Sidebar a:hover {
+  color:rgb(131, 132, 150);
+}
+
+#Sidebar a:active,
+#Sidebar a:active {
+  color:rgb(255, 255, 255);
 }
 
 #Slideshow {

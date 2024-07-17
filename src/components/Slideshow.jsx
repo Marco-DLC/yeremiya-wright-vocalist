@@ -2,9 +2,9 @@ export default function Slideshow() {
   return (
     <div id="Slideshow">
       <div className="slides-container">
-        <Slide src='../public/Spring-Sing.webp' />
-        <Slide src='../public/Yerry-Wright.webp' />
-        <Slide src='../public/Vocal-Jazz-Ensemble.webp' />
+        <Slide src='/spring-sing.jpg' />
+        <Slide src='/yerry-wright.jpg' />
+        <Slide src='/vocal-jazz-ensemble.jpg' />
       </div>
     </div>
   );

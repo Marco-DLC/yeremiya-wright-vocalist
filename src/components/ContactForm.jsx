@@ -36,7 +36,7 @@ export default function ContactForm() {
         <>
           <h2>Please Wait</h2>
           <p className="sending-p">Sending your message...</p>
-          <img src="./src/assets/loading-dots.gif" />
+          <img src="/loading-dots.gif" />
         </>
       );
     } else if (isSubmitted) {

@@ -11,8 +11,10 @@ function App() {
   return (
     <div id="App">
       <Header />
-      <Slideshow />
-      <Biography />
+      <div id="slideshowBioSection">
+        <Slideshow />
+        <Biography />
+      </div>
       <Showcase />
       <div id="resumesContactSection">
         <Resumes />

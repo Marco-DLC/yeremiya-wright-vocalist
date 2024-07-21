@@ -6,6 +6,9 @@ as well as to see his showcased talent.
 
 ![Yerry Wright website](./public/yeremiyawright-screenshot01.png)
 
+### Live Website:
+[yerrywright.netlify.app](https://yerrywright.netlify.app)
+
 ## Content:
 - Slideshow of a few photos of the client at the front of the website.
 - An 'about me' section that also lists accomplishments, education, gigs
